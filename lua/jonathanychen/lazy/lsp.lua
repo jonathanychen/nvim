@@ -27,6 +27,7 @@ return {
                     'pyright',
                     'lua_ls',
                     'gopls',
+                    'clangd'
                 },
             })
 

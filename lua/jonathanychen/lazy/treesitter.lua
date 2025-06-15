@@ -5,7 +5,7 @@ return {
         config = function()
             require('nvim-treesitter.configs').setup({
                 ensure_installed = {
-                    "javascript", "typescript", "lua", "go", "python",
+                    "javascript", "typescript", "lua", "go", "python", "cpp"
                 },
 
                 sync_install = false,
