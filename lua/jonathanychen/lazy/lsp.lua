@@ -17,6 +17,7 @@ return {
                 pyright = {},
                 ts_ls = {},
                 gopls = {},
+                hls = {},
             }
         },
         config = function(_, opts)
@@ -27,7 +28,8 @@ return {
                     'pyright',
                     'lua_ls',
                     'gopls',
-                    'clangd'
+                    'clangd',
+                    'hls',
                 },
             })
 
