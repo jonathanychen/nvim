@@ -12,7 +12,7 @@ vim.opt.swapfile = false
 
 vim.opt.clipboard = "unnamedplus"
 
-local two_space_filetypes = { "html", "javascriptreact", "typescriptreact", "cpp", "java", "haskell" }
+local two_space_filetypes = { "html", "javascriptreact", "typescriptreact", "cpp", "java", "haskell", "xml", "yml" }
 local eight_space_filetypes = { "c" }
 
 local function set_tabstop(filetypes, size)

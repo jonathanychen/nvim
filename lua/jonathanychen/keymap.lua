@@ -2,6 +2,7 @@ vim.keymap.set('n', 'grn', vim.lsp.buf.rename)
 vim.keymap.set('n', 'gra', vim.lsp.buf.code_action)
 vim.keymap.set('n', 'grr', vim.lsp.buf.references)
 vim.keymap.set('n', 'gr?', vim.diagnostic.open_float)
+vim.keymap.set('n', 'grd', vim.lsp.buf.definition)
 
 local telescope_builtin = require('telescope.builtin')
 
@@ -50,3 +51,8 @@ vim.keymap.set("n", "<C-s>", function() harpoon:list():select(4) end)
 -- Toggle previous & next buffers stored within Harpoon list
 vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
 vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
+
+-- Barbar
+vim.keymap.set("n", "<A-,>", "<Cmd>BufferPrevious<CR>")
+vim.keymap.set("n", "<A-.>", "<Cmd>BufferNext<CR>")
+vim.keymap.set("n", "<A-x>", "<Cmd>BufferClose<CR>")
